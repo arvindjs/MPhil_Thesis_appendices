@@ -1,0 +1,24 @@
+PLINK v1.90b5.4 64-bit (10 Apr 2018)
+Options in effect:
+  --bfile ../allstarsnps_tiwi_117
+  --bmerge ../1kg_pgx/1kg_pgxstarsnps_tiwi
+  --memory 12400MB
+  --out tiwi_1kg_allstarsnps_merge
+
+Hostname: cl4n073
+Working directory: /lustre/scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/filter_list/final_list/merged_file
+Start time: Thu Jan  9 11:49:40 2020
+
+Random number seed: 1578534580
+386377 MB RAM detected; reserving 12400 MB for main workspace.
+117 people loaded from ../allstarsnps_tiwi_117.fam.
+2504 people to be merged from ../1kg_pgx/1kg_pgxstarsnps_tiwi.fam.
+Of these, 2504 are new, while 0 are present in the base dataset.
+66 markers loaded from ../allstarsnps_tiwi_117.bim.
+56 markers to be merged from ../1kg_pgx/1kg_pgxstarsnps_tiwi.bim.
+Of these, 0 are new, while 56 are present in the base dataset.
+Performing single-pass merge (2621 people, 66 variants).
+Merged fileset written to tiwi_1kg_allstarsnps_merge.bed +
+tiwi_1kg_allstarsnps_merge.bim + tiwi_1kg_allstarsnps_merge.fam .
+
+End time: Thu Jan  9 11:49:40 2020

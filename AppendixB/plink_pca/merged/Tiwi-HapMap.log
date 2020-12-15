@@ -1,0 +1,26 @@
+PLINK v1.90b5.4 64-bit (10 Apr 2018)
+Options in effect:
+  --bfile tiwi_120_hg19.merge.HapMapIII_CGRCh37_pruned
+  --memory 63500MB
+  --out Tiwi-HapMap
+  --pca
+
+Hostname: cl4n027
+Working directory: /lustre/scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/plink_files/merged
+Start time: Tue Dec  3 15:06:22 2019
+
+Random number seed: 1575349582
+386377 MB RAM detected; reserving 63500 MB for main workspace.
+2791458 variants loaded from .bim file.
+1304 people (589 males, 595 females, 120 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to Tiwi-HapMap.nosex .
+Using up to 71 threads (change this with --threads).
+Before main variant filters, 1108 founders and 196 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.11209.
+2791458 variants and 1304 people pass filters and QC.
+Note: No phenotypes present.
+Relationship matrix calculation complete.
+--pca: Results saved to Tiwi-HapMap.eigenval and Tiwi-HapMap.eigenvec .
+
+End time: Tue Dec  3 15:08:19 2019

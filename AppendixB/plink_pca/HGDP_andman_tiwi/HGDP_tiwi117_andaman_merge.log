@@ -1,0 +1,29 @@
+PLINK v1.90b5.4 64-bit (10 Apr 2018)
+Options in effect:
+  --bfile phased_HGDP_India_Africa_2810SNPs
+  --make-bed
+  --merge-list mergelist
+  --out HGDP_tiwi117_andaman_merge
+
+Hostname: cl4n007
+Working directory: /lustre/scratch/NagarajLab_BG/HGDP_rosenberg
+Start time: Mon Jan 13 16:06:34 2020
+
+Random number seed: 1578895594
+386377 MB RAM detected; reserving 193188 MB for main workspace.
+Performing single-pass merge (1237 people, 2810 variants).
+Merged fileset written to HGDP_tiwi117_andaman_merge-merge.bed +
+HGDP_tiwi117_andaman_merge-merge.bim + HGDP_tiwi117_andaman_merge-merge.fam .
+2810 variants loaded from .bim file.
+1237 people (729 males, 378 females, 130 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to HGDP_tiwi117_andaman_merge.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1237 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.966213.
+2810 variants and 1237 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to HGDP_tiwi117_andaman_merge.bed + HGDP_tiwi117_andaman_merge.bim +
+HGDP_tiwi117_andaman_merge.fam ... done.
+
+End time: Mon Jan 13 16:06:34 2020

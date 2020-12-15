@@ -1,0 +1,26 @@
+File.Bed<-"./SKATBinary.example.bed"
+File.Bim<-"./SKATBinary.example.bim"
+File.Fam<-"./SKATBinary.example.fam"
+#File.Cov<-"./SKATBinary.example.cov"
+File.SetID<-"./SKATBinary.example.SetID"
+File.SSD<-"./SKATBinary.example.SSD"
+File.Info<-"./SKATBinary.example.SSD.info
+
+File.Bed<-"./tiwi_1kg_allstarsnps_merge.bed"
+File.Bim<-"./tiwi_1kg_allstarsnps_merge.bim"
+File.Fam<-"./tiwi_1kg_allstarsnps_merge.fam"
+File.SetID<-"./PGX_star.SetId"
+File.SSD<-"./PGX_star.SSD"
+File.Info<-"./PGX_star.SSD.info"
+Generate_SSD_SetID(File.Bed, File.Bim, File.Fam, File.SetID, File.SSD, File.Info)
+FAM<-Read_Plink_FAM(File.Fam, Is.binary=TRUE)
+SSD.INFO<-Open_SSD(File.SSD, File.Info)
+obj<-SKAT_Null_Model(Phenotype ~ 1, out_type="D", data=FAM, n.Resampling=1000, type.Resampling="bootstrap)    #n.Resampling=1000, type.Resampling="bootstrap"
+out.skat<-SKATBinary.SSD.All(SSD.INFO, obj, method="SKAT")
+out.skato<-SKATBinary.SSD.All(SSD.INFO, obj, method="SKATO")
+Get_EffectiveNumberTest(out.skat$results$MAP, alpha=0.05)
+
+output.df = out.skato$results
+write.table(output.df, file="./SKAt_star_alleles_pvalue_tiwivs1kg.txt", col.names=TRUE, row.names=FALSE)
+
+

@@ -1,0 +1,84 @@
+#####New 32 samples filter, liftover and norm
+1.  CrossMap.py vcf /home/n10135651/Database2/CrossmapDatabase/hg38ToHg19.over.chain.gz All32_Newseqcombineg_vqsr_filtered.vcf.gz /home/n10135651/Project/2_NBRL_Bloodgroup/0_Newdata_17_01_2020/0_NewData/hg19/hg19.fa update_hg19/Tiwi_new_32_hg19.vcf.gz
+
+2.  bcftools view -f PASS -c 1 Tiwi_new_32_hg19.vcf.gz -Oz -o Tiwi_new_32_hg19_filtered.vcf.gz
+
+3.  bcftools sort Tiwi_new_32_hg19_filtered.vcf.gz -Oz -o Tiwi_new_32_hg19_filtered_sorted.vcf.gz
+
+4.  bcftools annotate --rename-chrs /home/n10135651/Project/2_NBRL_Bloodgroup/0_NEWWGS_MARCH2020/DataWareHouse3/Sention_Combinejointcalling/1_All32SampleAnalysis/GRCh37_UCSC2ensembl.txt  /home/n10135651/Project/2_NBRL_Bloodgroup/0_NEWWGS_MARCH2020/DataWareHouse3/Sention_Combinejointcalling/1_All32SampleAnalysis/update_hg19/Tiwi_new_32_hg19_filtered_sorted.vcf.gz -Oz -o /home/n10135651/Project/2_NBRL_Bloodgroup/0_NEWWGS_MARCH2020/DataWareHouse3/Sention_Combinejointcalling/1_All32SampleAnalysis/update_hg19/Tiwi_new_32_hg19_filtered_sorted_updatedchr.vcf.gz
+
+5.  tabix /home/n10135651/Project/2_NBRL_Bloodgroup/0_NEWWGS_MARCH2020/DataWareHouse3/Sention_Combinejointcalling/1_All32SampleAnalysis/update_hg19/Tiwi_new_32_hg19_filtered_sorted_updatedchr.vcf.gz
+
+6. bcftools annotate -x INFO,ID,^FORMAT/GT -I +%CHROM:%POS:%REF:%ALT  | bcftools norm -r 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 -m-any --check-ref w -f /home/n10135651/Database2/GATK/TIWI_ref/hs37d5wphix.fa /home/n10135651/Project/2_NBRL_Bloodgroup/0_NEWWGS_MARCH2020/DataWareHouse3/Sention_Combinejointcalling/1_All32SampleAnalysis/update_hg19/Tiwi_new_32_hg19_filtered_sorted_updatedchr.vcf.gz | bcftools norm -Ob --rm-dup both -o /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_187_hardeep38_SN32/plink/3rd_merge/Tiwi_new_32_hg19_filtered_sorted_updatedchr_norm.bcf
+
+### Tiwi 120
+1.  bcftools view -f PASS -c 1 /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/tiwi_120_cohort_vqsr_filtered.vcf.gz -Oz -o /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/tiwi_120_cohort_vqsr_filteredrev.vcf.gz 
+
+2.  tabix tiwi_120_cohort_vqsr_filteredrev.vcf.gz
+
+3.  bcftools norm -r 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 -m-any --check-ref w -f /home/n10135651/Database2/GATK/TIWI_ref/hs37d5wphix.fa /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_120_cohort_vqsr_filteredrev.vcf.gz | bcftools annotate -x INFO,ID,^FORMAT/GT -I +%CHROM:%POS:%REF:%ALT | bcftools norm -Ob --rm-dup both -o /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_187_hardeep38_SN32/plink/3rd_merge/tiwi_120_cohort_vqsr_filteredrev_norm.bcf
+
+###Tiwi_ncig 39
+1.  CrossMap.py vcf /home/n10135651/Database2/CrossmapDatabase/hg38ToHg19.over.chain.gz /home/n10135651/Project/2_NBRL_Bloodgroup/0_Newdata_17_01_2020/0_NewData/renalfailurestudy_ncigsequenced.vcf /home/n10135651/Project/2_NBRL_Bloodgroup/0_Newdata_17_01_2020/0_NewData/hg19/hg19.fa /home/n10135651/Project/2_NBRL_Bloodgroup/0_Newdata_17_01_2020/0_NewData/hg19/renalfailurestudy_ncigsequenced_hg19.vcf
+
+2.  bcftools view -f PASS -c 1 renalfailurestudy_ncigsequenced_hg19.vcf -Oz -o renalfailurestudy_ncigsequenced_hg19_filtered.vcf.gz
+
+3.  bcftools sort renalfailurestudy_ncigsequenced_hg19_filtered.vcf.gz -Oz -o renalfailurestudy_ncigsequenced_hg19_filtered_sorted.vcf.gz
+
+4.  bcftools annotate --rename-chrs /home/n10135651/Project/2_NBRL_Bloodgroup/0_NEWWGS_MARCH2020/DataWareHouse3/Sention_Combinejointcalling/1_All32SampleAnalysis/GRCh37_UCSC2ensembl.txt   /home/n10135651/Project/2_NBRL_Bloodgroup/0_Newdata_17_01_2020/0_NewData/hg19/renalfailurestudy_ncigsequenced_hg19_filtered_sorted.vcf.gz -Oz -o /home/n10135651/Project/2_NBRL_Bloodgroup/0_Newdata_17_01_2020/0_NewData/hg19/renalfailurestudy_ncigsequenced_hg19_filtered_sorted_updatedchr.vcf.gz
+
+5.  tabix /home/n10135651/Project/2_NBRL_Bloodgroup/0_Newdata_17_01_2020/0_NewData/hg19/renalfailurestudy_ncigsequenced_hg19_filtered_sorted_updatedchr.vcf.gz
+
+6. bcftools annotate -x INFO,ID,^FORMAT/GT -I +%CHROM:%POS:%REF:%ALT /home/n10135651/Project/2_NBRL_Bloodgroup/0_Newdata_17_01_2020/0_NewData/hg19/renalfailurestudy_ncigsequenced_hg19_filtered_sorted_updatedchr.vcf.gz | bcftools norm -r 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 -m-any --check-ref w -f /home/n10135651/Database2/GATK/TIWI_ref/hs37d5wphix.fa  | bcftools norm -Ob --rm-dup both -o /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_187_hardeep38_SN32/plink/3rd_merge/renalfailurestudy_ncigsequenced_hg19_filtered_sorted_updatedchr.bcf
+
+
+
+###Merge
+bcftools merge -0 --thread 9 ~/Project/2_NBRL_Bloodgroup/0_Newdata_17_01_2020/1_MergeVCF/0_Excludewith_noCaseControlannoation/All_TIWI_vcfmerge_OnlyCaseControlannotation_hg38.vcf.gz ~/Project/2_NBRL_Bloodgroup/0_NEWWGS_MARCH2020/DataWareHouse/Sention_Combinejointcalling/NewData_11_03_2020_19combine.vcf.gz |bcftools norm --thread 9 -m-both - |bcftools norm --thread 9 -cw -f /home/n10135651/Database2/GRCH38/Homo_sapiens_assembly38.fasta -o All_TIWI_vcfmerge_hg38_bcfnorm2.vcf
+
+#############Merge vcfs
+bcftools index
+
+bcftools merge -0 -r 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_187_hardeep38_SN32/plink/3rd_merge/tiwi_120_cohort_vqsr_filteredrev_norm.bcf /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_187_hardeep38_SN32/plink/3rd_merge/renalfailurestudy_ncigsequenced_hg19_filtered_sorted_updatedchr.bcf /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_187_hardeep38_SN32/plink/3rd_merge/Tiwi_new_32_hg19_filtered_sorted_updatedchr_norm.bcf -Ob -o /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_187_hardeep38_SN32/plink/3rd_merge/Tiwi_cohort_191_hg19_sorted_filtered.bcf
+
+
+bcftools merge -0 -r 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_187_hardeep38_SN32/plink/3rd_merge/tiwi_120_cohort_vqsr_filteredrev_norm.bcf /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_187_hardeep38_SN32/plink/3rd_merge/renalfailurestudy_ncigsequenced_hg19_filtered_sorted_updatedchr.bcf /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_187_hardeep38_SN32/plink/3rd_merge/Tiwi_new_32_hg19_filtered_sorted_updatedchr_norm.bcf -Oz -o /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_187_hardeep38_SN32/plink/3rd_merge/Tiwi_cohort_191_hg19_sorted_filtered.vcf.gz
+
+Hardeep:/home/n10135651/Project/2_NBRL_Bloodgroup/0_Newdata_17_01_2020/0_NewData
+
+New 19 samples:/home/n10135651/Project/2_NBRL_Bloodgroup/0_NEWWGS_MARCH2020/DataWareHouse/Sention_Combinejointcalling
+
+bcftools merge -0 -r 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,21,22 /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/tiwi_120_cohort_vqsr_filtered.vcf /home/n10135651/Project/2_NBRL_Bloodgroup/0_Newdata_17_01_2020/0_NewData/hg19/renalfailurestudy_ncigsequenced_withoutchr_hg19_sorted.vcf.gz /home/n10135651/Project/2_NBRL_Bloodgroup/0_NEWWGS_MARCH2020/DataWareHouse/Sention_Combinejointcalling/NewData_11_03_2020_19combine_hg19_sorted.vcf.gz |bcftools norm -m-both - |bcftools norm --check-ref w -f ~/Database2/GATK/TIWI_ref/hs37d5wphix.fa -o Tiwi_cohort_177.vcf
+
+-s ^TIWI_sample16_sg1_humansingle1, ^TIWI_sample115_sg1_humansingle1, ^TIWI_sample96_sg1_humansingle1
+
+bcftools annotate -s ^TIWI_sample16_sg1_humansingle1, ^TIWI_sample115_sg1_humansingle1, ^TIWI_sample96_sg1_humansingle1 -x ID -I '%CHROM:%POS:%REF:%ALT' Tiwi_cohort_177.vcf >Tiwi_cohort_174.vcf| bcftools norm -Ob --rm-dup both > Tiwi_cohort_1.bcf
+
+
+grep "^#" renalfailurestudy_ncigsequenced_withoutchr_hg19.vcf > renalfailurestudy_ncigsequenced_withoutchr_hg19_sorted.vcf
+grep -v "^#" renalfailurestudy_ncigsequenced_withoutchr_hg19.vcf| sort -k1,1V -k2,2g >> renalfailurestudy_ncigsequenced_withoutchr_hg19_sorted.vcf
+
+
+~/Tools/plink --memory 32000MB --keep-allele-order --bcf ../Tiwi_cohort_175.bcf --double-id --biallelic-only --allow-extra-chr 0 --geno --exclude range /scratch/NagarajLab_BG/HAPMAP_plink/high-LD-regions.txt --indep-pairwise 50 5 0.2 --make-bed --out tiwi_175cohort
+
+~/Tools/plink --memory 32000MB --bfile tiwi_175cohort --extract tiwi_175cohort.prune.in --make-bed --out tiwi_175_cohort.pruned
+
+~/Tools/plink2 --memory 32000MB --bfile tiwi_175_cohort.pruned --rm-dup force-first --make-bed --out tiwi_175_cohort.pruned.nodup
+
+~/Tools/plink --bfile /scratch/NagarajLab_BG/1kg_plink/all_phase3_snp_v1 --extract /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_174_hardeep38_SN19/plink_files/tiwi_prunedpca.snplist --make-bed  --memory 32000 --out /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_174_hardeep38_SN19/plink_files/all_phase3_tiwi
+
+bcftools merge -0 -r 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,21,22 /home/n10135651/Project/2_NBRL_Bloodgroup/0_Newdata_17_01_2020/0_NewData/hg19/renalfailurestudy_ncigsequenced_withoutchr_hg19_sorted.vcf.gz /home/n10135651/Project/2_NBRL_Bloodgroup/0_NEWWGS_MARCH2020/DataWareHouse/Sention_Combinejointcalling/1_All32SampleAnalysis/Tiwi_new_32_hg19_sorted.vcf.gz| bcftools norm -m-both - |bcftools norm --check-ref w -f /home/n10135651/Database2/GATK/TIWI_ref/hs37d5wphix.fa -Oz -o Tiwi_cohort_71.vcf.gz
+
+bcftools annotate -x ID -I '%CHROM:%POS:%REF:%ALT' Tiwi_cohort_71.vcf.gz | bcftools norm -Ob --rm-dup both > Tiwi_cohort_71.bcf
+
+~/Tools/plink --allow-extra-chr 0  --bfile Tiwi_cohort_187 --biallelic-only  --maf 0.05  --exclude range /scratch/NagarajLab_BG/HAPMAP_plink/high-LD-regions.txt  --indep-pairwise 50 5 0.2 --keep-allele-order --out LD_prune/Tiwi_cohort_187
+
+
+~/Tools/plink --allow-extra-chr 0 --bfile tiwi_120_cohort --keep-allele-order --extract tiwi_120_cohort.prune.in --make-bed --memory 12000MB --out tiwi_120_cohort.pruned
+
+
+bcftools/1.10.2-foss-2019b
+~/Project/2_NBRL_Bloodgroup/0_NEWWGS_MARCH2020/DataWareHouse3/Sention_Combinejointcalling/1_All32SampleAnalysis
+
+bcftools view -GR /scratch/NagarajLab_BG/1kg_plink/PGX_landscape_1kg/DB_PGKB_genes_interval.bed -o 1KGP3_DB_PGKB_wids_wog.vcf ../All_1KGP3_genotypes_wids.vcf.gz
+

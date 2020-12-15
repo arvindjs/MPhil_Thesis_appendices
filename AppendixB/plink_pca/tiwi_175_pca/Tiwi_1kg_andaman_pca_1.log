@@ -1,0 +1,31 @@
+PLINK v1.90b5.4 64-bit (10 Apr 2018)
+Options in effect:
+  --bfile tiwi_1kg_andaman_1_maf0.1
+  --out /scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_174_hardeep38_SN19/plink_files/PCA/Tiwi_1kg_andaman_pca_1
+  --pca
+
+Hostname: cl4n023
+Working directory: /lustre/scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_174_hardeep38_SN19/plink_files
+Start time: Tue Jun  2 22:42:40 2020
+
+Random number seed: 1591101760
+386377 MB RAM detected; reserving 193188 MB for main workspace.
+729964 variants loaded from .bim file.
+2689 people (1233 males, 1271 females, 185 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+/scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_174_hardeep38_SN19/plink_files/PCA/Tiwi_1kg_andaman_pca_1.nosex
+.
+Using up to 71 threads (change this with --threads).
+Before main variant filters, 2682 founders and 7 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.607587.
+729964 variants and 2689 people pass filters and QC.
+Note: No phenotypes present.
+Relationship matrix calculation complete.
+--pca: Results saved to
+/scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_174_hardeep38_SN19/plink_files/PCA/Tiwi_1kg_andaman_pca_1.eigenval
+and
+/scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/Tiwi_174_hardeep38_SN19/plink_files/PCA/Tiwi_1kg_andaman_pca_1.eigenvec
+.
+
+End time: Tue Jun  2 22:54:21 2020

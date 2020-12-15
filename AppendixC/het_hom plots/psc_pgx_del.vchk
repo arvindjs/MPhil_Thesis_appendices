@@ -1,0 +1,621 @@
+# This file was produced by bcftools stats (1.10.2+htslib-1.10.2) and can be plotted using plot-vcfstats.
+# The command line was:	bcftools stats  -s - --af-bins 0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0 Tiwi_pgx_genes_delvar.vcf
+#
+# Definition of sets:
+# ID	[2]id	[3]tab-separated file names
+ID	0	Tiwi_pgx_genes_delvar.vcf
+# SN, Summary numbers:
+#   number of records   .. number of data rows in the VCF
+#   number of no-ALTs   .. reference-only sites, ALT is either "." or identical to REF
+#   number of SNPs      .. number of rows with a SNP
+#   number of MNPs      .. number of rows with a MNP, such as CC>TT
+#   number of indels    .. number of rows with an indel
+#   number of others    .. number of rows with other type, for example a symbolic allele or
+#                          a complex substitution, such as ACT>TCGA
+#   number of multiallelic sites     .. number of rows with multiple alternate alleles
+#   number of multiallelic SNP sites .. number of rows with multiple alternate alleles, all SNPs
+# 
+#   Note that rows containing multiple types will be counted multiple times, in each
+#   counter. For example, a row with a SNP and an indel increments both the SNP and
+#   the indel counter.
+# 
+# SN	[2]id	[3]key	[4]value
+SN	0	number of samples:	191
+SN	0	number of records:	478
+SN	0	number of no-ALTs:	0
+SN	0	number of SNPs:	478
+SN	0	number of MNPs:	0
+SN	0	number of indels:	0
+SN	0	number of others:	0
+SN	0	number of multiallelic sites:	0
+SN	0	number of multiallelic SNP sites:	0
+# TSTV, transitions/transversions:
+# TSTV	[2]id	[3]ts	[4]tv	[5]ts/tv	[6]ts (1st ALT)	[7]tv (1st ALT)	[8]ts/tv (1st ALT)
+TSTV	0	323	155	2.08	323	155	2.08
+# SiS, Singleton stats:
+# SiS	[2]id	[3]allele count	[4]number of SNPs	[5]number of transitions	[6]number of transversions	[7]number of indels	[8]repeat-consistent	[9]repeat-inconsistent	[10]not applicable
+SiS	0	1	172	118	54	0	0	0	0
+# AF, Stats by non-reference allele frequency:
+# AF	[2]id	[3]allele frequency	[4]number of SNPs	[5]number of transitions	[6]number of transversions	[7]number of indels	[8]repeat-consistent	[9]repeat-inconsistent	[10]not applicable
+AF	0	0.050000	379	249	130	0	0	0	0
+AF	0	0.150000	35	29	6	0	0	0	0
+AF	0	0.250000	23	15	8	0	0	0	0
+AF	0	0.350000	17	12	5	0	0	0	0
+AF	0	0.450000	6	4	2	0	0	0	0
+AF	0	0.550000	5	3	2	0	0	0	0
+AF	0	0.650000	5	4	1	0	0	0	0
+AF	0	0.750000	2	2	0	0	0	0	0
+AF	0	0.850000	5	4	1	0	0	0	0
+AF	0	0.950000	1	1	0	0	0	0	0
+# QUAL, Stats by quality:
+# QUAL	[2]id	[3]Quality	[4]number of SNPs	[5]number of transitions (1st ALT)	[6]number of transversions (1st ALT)	[7]number of indels
+QUAL	0	32	1	1	0	0
+QUAL	0	46	1	1	0	0
+QUAL	0	91	1	0	1	0
+QUAL	0	108	1	1	0	0
+QUAL	0	132	1	1	0	0
+QUAL	0	170	1	1	0	0
+QUAL	0	177	1	1	0	0
+QUAL	0	179	1	1	0	0
+QUAL	0	202	1	1	0	0
+QUAL	0	205	2	1	1	0
+QUAL	0	218	1	0	1	0
+QUAL	0	230	1	0	1	0
+QUAL	0	243	1	1	0	0
+QUAL	0	245	1	1	0	0
+QUAL	0	253	1	0	1	0
+QUAL	0	262	1	1	0	0
+QUAL	0	263	1	0	1	0
+QUAL	0	279	1	1	0	0
+QUAL	0	281	1	1	0	0
+QUAL	0	286	2	1	1	0
+QUAL	0	288	2	1	1	0
+QUAL	0	298	1	1	0	0
+QUAL	0	306	1	1	0	0
+QUAL	0	310	1	1	0	0
+QUAL	0	313	1	1	0	0
+QUAL	0	331	1	0	1	0
+QUAL	0	337	1	0	1	0
+QUAL	0	342	1	1	0	0
+QUAL	0	345	2	2	0	0
+QUAL	0	346	1	0	1	0
+QUAL	0	354	1	1	0	0
+QUAL	0	362	1	1	0	0
+QUAL	0	372	1	1	0	0
+QUAL	0	381	1	1	0	0
+QUAL	0	382	1	1	0	0
+QUAL	0	384	1	0	1	0
+QUAL	0	398	1	1	0	0
+QUAL	0	400	1	0	1	0
+QUAL	0	404	2	1	1	0
+QUAL	0	408	1	1	0	0
+QUAL	0	413	2	1	1	0
+QUAL	0	417	1	0	1	0
+QUAL	0	419	1	0	1	0
+QUAL	0	424	3	1	2	0
+QUAL	0	429	1	1	0	0
+QUAL	0	430	1	1	0	0
+QUAL	0	438	1	1	0	0
+QUAL	0	439	1	0	1	0
+QUAL	0	447	1	1	0	0
+QUAL	0	451	2	1	1	0
+QUAL	0	453	1	1	0	0
+QUAL	0	463	1	1	0	0
+QUAL	0	464	1	1	0	0
+QUAL	0	469	1	1	0	0
+QUAL	0	470	1	1	0	0
+QUAL	0	480	1	0	1	0
+QUAL	0	489	1	0	1	0
+QUAL	0	491	1	0	1	0
+QUAL	0	499	1	0	1	0
+QUAL	0	500	1	1	0	0
+QUAL	0	502	1	1	0	0
+QUAL	0	505	2	1	1	0
+QUAL	0	510	1	0	1	0
+QUAL	0	512	1	1	0	0
+QUAL	0	513	1	1	0	0
+QUAL	0	517	2	2	0	0
+QUAL	0	530	1	1	0	0
+QUAL	0	531	1	1	0	0
+QUAL	0	543	1	1	0	0
+QUAL	0	550	2	1	1	0
+QUAL	0	558	1	1	0	0
+QUAL	0	562	1	1	0	0
+QUAL	0	563	2	2	0	0
+QUAL	0	564	1	1	0	0
+QUAL	0	565	1	0	1	0
+QUAL	0	575	1	1	0	0
+QUAL	0	583	1	1	0	0
+QUAL	0	584	1	1	0	0
+QUAL	0	586	1	1	0	0
+QUAL	0	587	1	1	0	0
+QUAL	0	598	1	0	1	0
+QUAL	0	604	2	1	1	0
+QUAL	0	613	1	1	0	0
+QUAL	0	620	1	0	1	0
+QUAL	0	622	1	0	1	0
+QUAL	0	627	1	1	0	0
+QUAL	0	632	1	1	0	0
+QUAL	0	633	1	1	0	0
+QUAL	0	637	1	1	0	0
+QUAL	0	640	1	1	0	0
+QUAL	0	648	1	0	1	0
+QUAL	0	657	1	1	0	0
+QUAL	0	663	1	1	0	0
+QUAL	0	674	1	0	1	0
+QUAL	0	686	1	0	1	0
+QUAL	0	690	1	1	0	0
+QUAL	0	693	1	1	0	0
+QUAL	0	700	1	1	0	0
+QUAL	0	702	1	1	0	0
+QUAL	0	704	1	1	0	0
+QUAL	0	707	1	0	1	0
+QUAL	0	710	1	0	1	0
+QUAL	0	717	1	1	0	0
+QUAL	0	724	1	1	0	0
+QUAL	0	731	2	2	0	0
+QUAL	0	738	1	1	0	0
+QUAL	0	739	1	1	0	0
+QUAL	0	749	1	1	0	0
+QUAL	0	750	1	0	1	0
+QUAL	0	751	1	0	1	0
+QUAL	0	758	1	0	1	0
+QUAL	0	782	1	1	0	0
+QUAL	0	789	2	0	2	0
+QUAL	0	798	1	1	0	0
+QUAL	0	801	1	1	0	0
+QUAL	0	808	1	0	1	0
+QUAL	0	811	1	1	0	0
+QUAL	0	814	1	0	1	0
+QUAL	0	815	1	1	0	0
+QUAL	0	823	1	0	1	0
+QUAL	0	826	1	1	0	0
+QUAL	0	831	1	1	0	0
+QUAL	0	836	1	0	1	0
+QUAL	0	844	1	1	0	0
+QUAL	0	849	2	0	2	0
+QUAL	0	864	1	0	1	0
+QUAL	0	865	1	0	1	0
+QUAL	0	869	1	0	1	0
+QUAL	0	870	1	1	0	0
+QUAL	0	872	1	1	0	0
+QUAL	0	875	1	1	0	0
+QUAL	0	878	1	1	0	0
+QUAL	0	882	1	1	0	0
+QUAL	0	883	1	0	1	0
+QUAL	0	884	1	1	0	0
+QUAL	0	894	1	1	0	0
+QUAL	0	908	1	1	0	0
+QUAL	0	914	1	0	1	0
+QUAL	0	916	1	0	1	0
+QUAL	0	929	1	0	1	0
+QUAL	0	938	1	1	0	0
+QUAL	0	939	1	1	0	0
+QUAL	0	944	1	1	0	0
+QUAL	0	949	1	1	0	0
+QUAL	0	954	1	1	0	0
+QUAL	0	958	1	0	1	0
+QUAL	0	966	1	0	1	0
+QUAL	0	967	1	0	1	0
+QUAL	0	987	1	0	1	0
+QUAL	0	992	2	2	0	0
+QUAL	0	993	1	1	0	0
+QUAL	0	997	1	1	0	0
+QUAL	0	998	308	213	95	0
+# IDD, InDel distribution:
+# IDD	[2]id	[3]length (deletions negative)	[4]number of sites	[5]number of genotypes	[6]mean VAF
+# ST, Substitution types:
+# ST	[2]id	[3]type	[4]count
+ST	0	A>C	15
+ST	0	A>G	47
+ST	0	A>T	11
+ST	0	C>A	28
+ST	0	C>G	30
+ST	0	C>T	119
+ST	0	G>A	121
+ST	0	G>C	32
+ST	0	G>T	20
+ST	0	T>A	9
+ST	0	T>C	36
+ST	0	T>G	10
+# DP, Depth distribution
+# DP	[2]id	[3]bin	[4]number of genotypes	[5]fraction of genotypes (%)	[6]number of sites	[7]fraction of sites (%)
+DP	0	>500	0	0.000000	478	100.000000
+# PSC, Per-sample counts. Note that the ref/het/hom counts include only SNPs, for indels see PSI. The rest include both SNPs and indels.
+# PSC	[2]id	[3]sample	[4]nRefHom	[5]nNonRefHom	[6]nHets	[7]nTransitions	[8]nTransversions	[9]nIndels	[10]average depth	[11]nSingletons	[12]nHapRef	[13]nHapAlt	[14]nMissing
+PSC	0	TIWI_sample100_sg1_humansingle1	407	15	56	52	19	0	0.0	0	0	0	0
+PSC	0	TIWI_sample101_sg1_humansingle1	408	13	56	53	16	0	0.0	0	0	0	1
+PSC	0	TIWI_sample102_sg1_humansingle1	418	10	50	46	14	0	0.0	0	0	0	0
+PSC	0	TIWI_sample103_sg1_humansingle1	407	15	53	48	20	0	0.0	0	0	0	3
+PSC	0	TIWI_sample104_sg1_humansingle1	407	21	50	51	20	0	0.0	0	0	0	0
+PSC	0	TIWI_sample105_sg1_humansingle1	413	20	45	43	22	0	0.0	0	0	0	0
+PSC	0	TIWI_sample106_sg1_humansingle1	413	15	47	44	18	0	0.0	1	0	0	3
+PSC	0	TIWI_sample107_sg1_humansingle1	408	12	57	49	20	0	0.0	0	0	0	1
+PSC	0	TIWI_sample109_sg1_humansingle1	415	12	50	48	14	0	0.0	1	0	0	1
+PSC	0	TIWI_sample10_sg1_humansingle1	418	14	44	39	19	0	0.0	1	0	0	2
+PSC	0	TIWI_sample110_sg1_humansingle1	412	17	49	44	22	0	0.0	0	0	0	0
+PSC	0	TIWI_sample111_sg1_humansingle1	415	18	43	47	14	0	0.0	0	0	0	2
+PSC	0	TIWI_sample112_sg1_humansingle1	403	14	61	56	19	0	0.0	12	0	0	0
+PSC	0	TIWI_sample113_sg1_humansingle1	417	16	45	48	13	0	0.0	0	0	0	0
+PSC	0	TIWI_sample114_sg1_humansingle1	407	16	53	52	17	0	0.0	2	0	0	2
+PSC	0	TIWI_sample115_sg1_humansingle1	420	9	47	41	15	0	0.0	7	0	0	2
+PSC	0	TIWI_sample116_sg1_humansingle1	413	19	46	41	24	0	0.0	1	0	0	0
+PSC	0	TIWI_sample117_sg1_humansingle1	408	21	48	51	18	0	0.0	0	0	0	1
+PSC	0	TIWI_sample118_sg1_humansingle1	416	20	42	47	15	0	0.0	0	0	0	0
+PSC	0	TIWI_sample119_sg1_humansingle1	402	12	63	57	18	0	0.0	1	0	0	1
+PSC	0	TIWI_sample11_sg1_humansingle1	415	9	54	40	23	0	0.0	0	0	0	0
+PSC	0	TIWI_sample120_sg1_humansingle1	412	17	48	43	22	0	0.0	0	0	0	1
+PSC	0	TIWI_sample121_sg1_humansingle1	409	11	55	47	19	0	0.0	7	0	0	3
+PSC	0	TIWI_sample12_sg1_humansingle1	418	14	46	44	16	0	0.0	0	0	0	0
+PSC	0	TIWI_sample13_sg1_humansingle1	406	19	48	49	18	0	0.0	0	0	0	5
+PSC	0	TIWI_sample14_sg1_humansingle1	411	10	56	47	19	0	0.0	0	0	0	1
+PSC	0	TIWI_sample15_sg1_humansingle1	413	14	47	46	15	0	0.0	0	0	0	4
+PSC	0	TIWI_sample16_sg1_humansingle1	410	14	54	49	19	0	0.0	0	0	0	0
+PSC	0	TIWI_sample17_sg1_humansingle1	408	14	56	50	20	0	0.0	9	0	0	0
+PSC	0	TIWI_sample18_sg1_humansingle1	410	11	56	52	15	0	0.0	8	0	0	1
+PSC	0	TIWI_sample19_sg1_humansingle1	416	18	43	42	19	0	0.0	1	0	0	1
+PSC	0	TIWI_sample1_sg1_humansingle1	421	12	44	32	24	0	0.0	0	0	0	1
+PSC	0	TIWI_sample20_sg1_humansingle1	404	20	53	54	19	0	0.0	0	0	0	1
+PSC	0	TIWI_sample21_sg1_humansingle1	419	16	41	37	20	0	0.0	0	0	0	2
+PSC	0	TIWI_sample22_sg1_humansingle1	404	19	55	55	19	0	0.0	0	0	0	0
+PSC	0	TIWI_sample23_sg1_humansingle1	405	14	59	48	25	0	0.0	0	0	0	0
+PSC	0	TIWI_sample24_sg1_humansingle1	412	22	44	47	19	0	0.0	1	0	0	0
+PSC	0	TIWI_sample25_sg1_humansingle1	416	17	45	45	17	0	0.0	0	0	0	0
+PSC	0	TIWI_sample26_sg1_humansingle1	404	14	58	53	19	0	0.0	0	0	0	2
+PSC	0	TIWI_sample27_sg1_humansingle1	414	15	49	44	20	0	0.0	0	0	0	0
+PSC	0	TIWI_sample28_sg1_humansingle1	418	15	45	47	13	0	0.0	0	0	0	0
+PSC	0	TIWI_sample29_sg1_humansingle1	411	15	52	47	20	0	0.0	0	0	0	0
+PSC	0	TIWI_sample2_sg1_humansingle1	410	17	51	51	17	0	0.0	4	0	0	0
+PSC	0	TIWI_sample30_sg1_humansingle1	422	15	41	41	15	0	0.0	0	0	0	0
+PSC	0	TIWI_sample31_sg1_humansingle1	418	21	39	45	15	0	0.0	10	0	0	0
+PSC	0	TIWI_sample32_sg1_humansingle1	411	13	53	48	18	0	0.0	0	0	0	1
+PSC	0	TIWI_sample33_sg1_humansingle1	405	17	56	51	22	0	0.0	1	0	0	0
+PSC	0	TIWI_sample34_sg1_humansingle1	410	20	48	46	22	0	0.0	0	0	0	0
+PSC	0	TIWI_sample35_sg1_humansingle1	419	13	46	41	18	0	0.0	0	0	0	0
+PSC	0	TIWI_sample36_sg1_humansingle1	407	13	58	48	23	0	0.0	0	0	0	0
+PSC	0	TIWI_sample37_sg1_humansingle1	411	16	49	43	22	0	0.0	0	0	0	2
+PSC	0	TIWI_sample38_sg1_humansingle1	410	7	60	50	17	0	0.0	13	0	0	1
+PSC	0	TIWI_sample39_sg1_humansingle1	421	18	39	39	18	0	0.0	0	0	0	0
+PSC	0	TIWI_sample3_sg1_humansingle1	414	11	52	47	16	0	0.0	1	0	0	1
+PSC	0	TIWI_sample40_sg1_humansingle1	415	12	50	42	20	0	0.0	0	0	0	1
+PSC	0	TIWI_sample41_sg1_humansingle1	408	18	51	47	22	0	0.0	2	0	0	1
+PSC	0	TIWI_sample42_sg1_humansingle1	417	14	46	47	13	0	0.0	0	0	0	1
+PSC	0	TIWI_sample43_sg1_humansingle1	416	15	47	42	20	0	0.0	2	0	0	0
+PSC	0	TIWI_sample44_sg1_humansingle1	411	19	48	53	14	0	0.0	0	0	0	0
+PSC	0	TIWI_sample45_sg1_humansingle1	420	20	38	45	13	0	0.0	0	0	0	0
+PSC	0	TIWI_sample46_sg1_humansingle1	417	18	42	41	19	0	0.0	0	0	0	1
+PSC	0	TIWI_sample47_sg1_humansingle1	420	17	38	39	16	0	0.0	0	0	0	3
+PSC	0	TIWI_sample48_sg1_humansingle1	419	20	39	42	17	0	0.0	0	0	0	0
+PSC	0	TIWI_sample49_sg1_humansingle1	424	12	42	39	15	0	0.0	0	0	0	0
+PSC	0	TIWI_sample4_sg1_humansingle1	413	17	44	49	12	0	0.0	0	0	0	4
+PSC	0	TIWI_sample50_sg1_humansingle1	423	14	41	38	17	0	0.0	0	0	0	0
+PSC	0	TIWI_sample51_sg1_humansingle1	410	13	55	46	22	0	0.0	0	0	0	0
+PSC	0	TIWI_sample52_sg1_humansingle1	419	15	44	42	17	0	0.0	0	0	0	0
+PSC	0	TIWI_sample53_sg1_humansingle1	411	19	47	39	27	0	0.0	0	0	0	1
+PSC	0	TIWI_sample54_sg1_humansingle1	419	15	43	40	18	0	0.0	1	0	0	1
+PSC	0	TIWI_sample55_sg1_humansingle1	405	14	59	50	23	0	0.0	0	0	0	0
+PSC	0	TIWI_sample56_sg1_humansingle1	418	15	44	42	17	0	0.0	0	0	0	1
+PSC	0	TIWI_sample57_sg1_humansingle1	421	15	39	41	13	0	0.0	0	0	0	3
+PSC	0	TIWI_sample58_sg1_humansingle1	424	13	41	36	18	0	0.0	0	0	0	0
+PSC	0	TIWI_sample59_sg1_humansingle1	420	17	40	45	12	0	0.0	0	0	0	1
+PSC	0	TIWI_sample5_sg1_humansingle1	418	20	38	43	15	0	0.0	0	0	0	2
+PSC	0	TIWI_sample60_sg1_humansingle1	419	16	43	42	17	0	0.0	0	0	0	0
+PSC	0	TIWI_sample61_sg1_humansingle1	421	9	48	40	17	0	0.0	0	0	0	0
+PSC	0	TIWI_sample62_sg1_humansingle1	409	14	55	49	20	0	0.0	0	0	0	0
+PSC	0	TIWI_sample63_sg1_humansingle1	408	16	54	53	17	0	0.0	0	0	0	0
+PSC	0	TIWI_sample64_sg1_humansingle1	419	13	46	41	18	0	0.0	0	0	0	0
+PSC	0	TIWI_sample65_sg1_humansingle1	407	21	50	55	16	0	0.0	0	0	0	0
+PSC	0	TIWI_sample66_sg1_humansingle1	415	14	48	43	19	0	0.0	0	0	0	1
+PSC	0	TIWI_sample67_sg1_humansingle1	407	11	59	50	20	0	0.0	0	0	0	1
+PSC	0	TIWI_sample68_sg1_humansingle1	412	17	48	42	23	0	0.0	1	0	0	1
+PSC	0	TIWI_sample69_sg1_humansingle1	417	13	48	42	19	0	0.0	0	0	0	0
+PSC	0	TIWI_sample6_sg1_humansingle1	416	16	46	45	17	0	0.0	0	0	0	0
+PSC	0	TIWI_sample70_sg1_humansingle1	402	16	60	48	28	0	0.0	0	0	0	0
+PSC	0	TIWI_sample71_sg1_humansingle1	412	16	50	49	17	0	0.0	10	0	0	0
+PSC	0	TIWI_sample72_sg1_humansingle1	415	13	48	45	16	0	0.0	0	0	0	2
+PSC	0	TIWI_sample73_sg1_humansingle1	404	18	55	55	18	0	0.0	0	0	0	1
+PSC	0	TIWI_sample74_sg1_humansingle1	411	16	51	49	18	0	0.0	0	0	0	0
+PSC	0	TIWI_sample75_sg1_humansingle1	405	20	52	54	18	0	0.0	0	0	0	1
+PSC	0	TIWI_sample76_sg1_humansingle1	419	18	39	42	15	0	0.0	0	0	0	2
+PSC	0	TIWI_sample77_sg1_humansingle1	411	13	53	40	26	0	0.0	0	0	0	1
+PSC	0	TIWI_sample78_sg1_humansingle1	412	14	52	47	19	0	0.0	0	0	0	0
+PSC	0	TIWI_sample79_sg1_humansingle1	422	19	36	37	18	0	0.0	0	0	0	1
+PSC	0	TIWI_sample7_sg1_humansingle1	424	18	36	40	14	0	0.0	0	0	0	0
+PSC	0	TIWI_sample80_sg1_humansingle1	415	12	48	46	14	0	0.0	0	0	0	3
+PSC	0	TIWI_sample81_sg1_humansingle1	418	13	47	46	14	0	0.0	0	0	0	0
+PSC	0	TIWI_sample82_sg1_humansingle1	415	11	50	42	19	0	0.0	0	0	0	2
+PSC	0	TIWI_sample83_sg1_humansingle1	402	11	62	52	21	0	0.0	1	0	0	3
+PSC	0	TIWI_sample84_sg1_humansingle1	419	15	42	37	20	0	0.0	0	0	0	2
+PSC	0	TIWI_sample85_sg1_humansingle1	407	16	55	54	17	0	0.0	0	0	0	0
+PSC	0	TIWI_sample86_sg1_humansingle1	412	17	49	50	16	0	0.0	0	0	0	0
+PSC	0	TIWI_sample87_sg1_humansingle1	407	10	58	47	21	0	0.0	0	0	0	3
+PSC	0	TIWI_sample88_sg1_humansingle1	416	14	47	44	17	0	0.0	0	0	0	1
+PSC	0	TIWI_sample89_sg1_humansingle1	416	18	41	39	20	0	0.0	0	0	0	3
+PSC	0	TIWI_sample8_sg1_humansingle1	413	18	45	44	19	0	0.0	0	0	0	2
+PSC	0	TIWI_sample90_sg1_humansingle1	416	21	40	46	15	0	0.0	0	0	0	1
+PSC	0	TIWI_sample91_sg1_humansingle1	419	16	43	40	19	0	0.0	0	0	0	0
+PSC	0	TIWI_sample92_sg1_humansingle1	403	11	63	50	24	0	0.0	0	0	0	1
+PSC	0	TIWI_sample93_sg1_humansingle1	415	17	44	41	20	0	0.0	0	0	0	2
+PSC	0	TIWI_sample94_sg1_humansingle1	411	16	50	45	21	0	0.0	0	0	0	1
+PSC	0	TIWI_sample95_sg1_humansingle1	422	11	45	40	16	0	0.0	0	0	0	0
+PSC	0	TIWI_sample96_sg1_humansingle1	417	15	46	47	14	0	0.0	0	0	0	0
+PSC	0	TIWI_sample97_sg1_humansingle1	405	16	55	47	24	0	0.0	0	0	0	2
+PSC	0	TIWI_sample98_sg1_humansingle1	413	14	50	46	18	0	0.0	6	0	0	1
+PSC	0	TIWI_sample99_sg1_humansingle1	414	12	51	48	15	0	0.0	0	0	0	1
+PSC	0	TIWI_sample9_sg1_humansingle1	409	13	55	48	20	0	0.0	0	0	0	1
+PSC	0	1901	423	20	34	40	14	0	0.0	0	0	0	1
+PSC	0	2325	418	15	44	42	17	0	0.0	0	0	0	1
+PSC	0	1265	418	14	44	40	18	0	0.0	0	0	0	2
+PSC	0	1243	416	12	50	47	15	0	0.0	0	0	0	0
+PSC	0	2167	430	10	37	35	12	0	0.0	0	0	0	1
+PSC	0	1791	421	19	36	36	19	0	0.0	0	0	0	2
+PSC	0	1405	423	13	40	40	13	0	0.0	1	0	0	2
+PSC	0	5107	415	14	49	44	19	0	0.0	0	0	0	0
+PSC	0	1071	422	13	42	42	13	0	0.0	0	0	0	1
+PSC	0	1350	411	20	46	49	17	0	0.0	0	0	0	1
+PSC	0	1429	429	13	36	35	14	0	0.0	0	0	0	0
+PSC	0	1638	421	14	42	41	15	0	0.0	0	0	0	1
+PSC	0	1632	420	16	41	39	18	0	0.0	1	0	0	1
+PSC	0	2618	424	13	40	39	14	0	0.0	0	0	0	1
+PSC	0	1674	416	14	47	46	15	0	0.0	2	0	0	1
+PSC	0	1639	428	11	38	33	16	0	0.0	1	0	0	1
+PSC	0	1659	423	16	38	35	19	0	0.0	0	0	0	1
+PSC	0	1860	424	14	40	34	20	0	0.0	0	0	0	0
+PSC	0	1820	425	12	40	37	15	0	0.0	0	0	0	1
+PSC	0	2604	419	16	43	41	18	0	0.0	8	0	0	0
+PSC	0	1647	422	12	44	39	17	0	0.0	2	0	0	0
+PSC	0	1511	424	20	34	41	13	0	0.0	0	0	0	0
+PSC	0	2415	424	7	47	43	11	0	0.0	4	0	0	0
+PSC	0	1441	428	14	35	32	17	0	0.0	0	0	0	1
+PSC	0	1897	418	14	45	40	19	0	0.0	0	0	0	1
+PSC	0	1658	424	14	39	37	16	0	0.0	0	0	0	1
+PSC	0	1530	419	19	39	43	15	0	0.0	0	0	0	1
+PSC	0	2233	424	16	38	41	13	0	0.0	0	0	0	0
+PSC	0	2547	416	12	48	43	17	0	0.0	5	0	0	2
+PSC	0	1165	420	12	45	43	14	0	0.0	0	0	0	1
+PSC	0	2628	423	11	44	40	15	0	0.0	0	0	0	0
+PSC	0	2809	425	13	40	36	17	0	0.0	0	0	0	0
+PSC	0	1515	414	21	42	45	18	0	0.0	0	0	0	1
+PSC	0	2806	428	16	34	34	16	0	0.0	0	0	0	0
+PSC	0	1374	421	10	45	43	12	0	0.0	7	0	0	2
+PSC	0	1645	422	15	41	40	16	0	0.0	0	0	0	0
+PSC	0	5341	426	14	38	40	12	0	0.0	0	0	0	0
+PSC	0	2626	428	14	35	38	11	0	0.0	0	0	0	1
+PSC	0	1980	410	10	58	55	13	0	0.0	11	0	0	0
+PSC	0	FD03058408	422	14	42	44	12	0	0.0	0	0	0	0
+PSC	0	FD03058409	423	11	43	43	11	0	0.0	0	0	0	1
+PSC	0	FD03058416	426	10	42	40	12	0	0.0	0	0	0	0
+PSC	0	FD03058417	425	15	38	40	13	0	0.0	0	0	0	0
+PSC	0	FD03058424	418	17	42	47	12	0	0.0	0	0	0	1
+PSC	0	FD03058425	428	12	37	37	12	0	0.0	0	0	0	1
+PSC	0	FD03058431	436	20	21	34	7	0	0.0	8	0	0	1
+PSC	0	FD03058432	422	11	45	39	17	0	0.0	0	0	0	0
+PSC	0	FD03058439	414	17	47	46	18	0	0.0	0	0	0	0
+PSC	0	FD03058440	428	13	36	34	15	0	0.0	0	0	0	1
+PSC	0	FD03058441	426	13	39	37	15	0	0.0	0	0	0	0
+PSC	0	FD03058447	423	15	40	40	15	0	0.0	0	0	0	0
+PSC	0	FD03058448	425	11	41	37	15	0	0.0	2	0	0	1
+PSC	0	FD03058449	428	11	39	38	12	0	0.0	0	0	0	0
+PSC	0	FD03058455	429	16	32	33	15	0	0.0	0	0	0	1
+PSC	0	FD03058456	416	19	43	42	20	0	0.0	0	0	0	0
+PSC	0	FD03058457	426	11	41	37	15	0	0.0	6	0	0	0
+PSC	0	FD03058463	426	8	44	38	14	0	0.0	0	0	0	0
+PSC	0	FD03058464	419	16	42	42	16	0	0.0	0	0	0	1
+PSC	0	FD03058465	426	12	40	38	14	0	0.0	0	0	0	0
+PSC	0	FD03058471	432	10	35	36	9	0	0.0	0	0	0	1
+PSC	0	FD03058472	427	12	38	38	12	0	0.0	2	0	0	1
+PSC	0	FD03058473	421	17	39	42	14	0	0.0	0	0	0	1
+PSC	0	FD03058479	414	19	45	49	15	0	0.0	0	0	0	0
+PSC	0	FD03058480	424	13	41	37	17	0	0.0	1	0	0	0
+PSC	0	FD03058481	430	11	37	32	16	0	0.0	0	0	0	0
+PSC	0	FD03058487	420	18	40	45	13	0	0.0	0	0	0	0
+PSC	0	FD03058488	432	13	32	33	12	0	0.0	0	0	0	1
+PSC	0	FD03058489	390	4	83	61	26	0	0.0	11	0	0	1
+PSC	0	FD03058495	417	13	48	42	19	0	0.0	0	0	0	0
+PSC	0	FD03058496	421	13	44	38	19	0	0.0	1	0	0	0
+PSC	0	FD03058497	427	16	35	35	16	0	0.0	0	0	0	0
+# PSI, Per-Sample Indels. Note that alt-het genotypes with both ins and del allele are counted twice, in both nInsHets and nDelHets.
+# PSI	[2]id	[3]sample	[4]in-frame	[5]out-frame	[6]not applicable	[7]out/(in+out) ratio	[8]nInsHets	[9]nDelHets	[10]nInsAltHoms	[11]nDelAltHoms
+PSI	0	TIWI_sample100_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample101_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample102_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample103_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample104_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample105_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample106_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample107_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample109_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample10_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample110_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample111_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample112_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample113_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample114_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample115_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample116_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample117_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample118_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample119_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample11_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample120_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample121_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample12_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample13_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample14_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample15_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample16_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample17_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample18_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample19_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample1_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample20_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample21_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample22_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample23_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample24_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample25_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample26_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample27_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample28_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample29_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample2_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample30_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample31_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample32_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample33_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample34_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample35_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample36_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample37_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample38_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample39_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample3_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample40_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample41_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample42_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample43_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample44_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample45_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample46_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample47_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample48_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample49_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample4_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample50_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample51_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample52_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample53_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample54_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample55_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample56_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample57_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample58_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample59_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample5_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample60_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample61_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample62_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample63_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample64_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample65_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample66_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample67_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample68_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample69_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample6_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample70_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample71_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample72_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample73_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample74_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample75_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample76_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample77_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample78_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample79_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample7_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample80_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample81_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample82_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample83_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample84_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample85_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample86_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample87_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample88_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample89_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample8_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample90_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample91_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample92_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample93_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample94_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample95_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample96_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample97_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample98_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample99_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	TIWI_sample9_sg1_humansingle1	0	0	0	0.00	0	0	0	0
+PSI	0	1901	0	0	0	0.00	0	0	0	0
+PSI	0	2325	0	0	0	0.00	0	0	0	0
+PSI	0	1265	0	0	0	0.00	0	0	0	0
+PSI	0	1243	0	0	0	0.00	0	0	0	0
+PSI	0	2167	0	0	0	0.00	0	0	0	0
+PSI	0	1791	0	0	0	0.00	0	0	0	0
+PSI	0	1405	0	0	0	0.00	0	0	0	0
+PSI	0	5107	0	0	0	0.00	0	0	0	0
+PSI	0	1071	0	0	0	0.00	0	0	0	0
+PSI	0	1350	0	0	0	0.00	0	0	0	0
+PSI	0	1429	0	0	0	0.00	0	0	0	0
+PSI	0	1638	0	0	0	0.00	0	0	0	0
+PSI	0	1632	0	0	0	0.00	0	0	0	0
+PSI	0	2618	0	0	0	0.00	0	0	0	0
+PSI	0	1674	0	0	0	0.00	0	0	0	0
+PSI	0	1639	0	0	0	0.00	0	0	0	0
+PSI	0	1659	0	0	0	0.00	0	0	0	0
+PSI	0	1860	0	0	0	0.00	0	0	0	0
+PSI	0	1820	0	0	0	0.00	0	0	0	0
+PSI	0	2604	0	0	0	0.00	0	0	0	0
+PSI	0	1647	0	0	0	0.00	0	0	0	0
+PSI	0	1511	0	0	0	0.00	0	0	0	0
+PSI	0	2415	0	0	0	0.00	0	0	0	0
+PSI	0	1441	0	0	0	0.00	0	0	0	0
+PSI	0	1897	0	0	0	0.00	0	0	0	0
+PSI	0	1658	0	0	0	0.00	0	0	0	0
+PSI	0	1530	0	0	0	0.00	0	0	0	0
+PSI	0	2233	0	0	0	0.00	0	0	0	0
+PSI	0	2547	0	0	0	0.00	0	0	0	0
+PSI	0	1165	0	0	0	0.00	0	0	0	0
+PSI	0	2628	0	0	0	0.00	0	0	0	0
+PSI	0	2809	0	0	0	0.00	0	0	0	0
+PSI	0	1515	0	0	0	0.00	0	0	0	0
+PSI	0	2806	0	0	0	0.00	0	0	0	0
+PSI	0	1374	0	0	0	0.00	0	0	0	0
+PSI	0	1645	0	0	0	0.00	0	0	0	0
+PSI	0	5341	0	0	0	0.00	0	0	0	0
+PSI	0	2626	0	0	0	0.00	0	0	0	0
+PSI	0	1980	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058408	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058409	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058416	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058417	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058424	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058425	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058431	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058432	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058439	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058440	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058441	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058447	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058448	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058449	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058455	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058456	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058457	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058463	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058464	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058465	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058471	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058472	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058473	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058479	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058480	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058481	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058487	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058488	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058489	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058495	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058496	0	0	0	0.00	0	0	0	0
+PSI	0	FD03058497	0	0	0	0.00	0	0	0	0
+# HWE
+# HWE	[2]id	[3]1st ALT allele frequency	[4]Number of observations	[5]25th percentile	[6]median	[7]75th percentile
+HWE	0	0.050000	379	0.000000	0.010000	0.040000
+HWE	0	0.150000	35	0.200000	0.240000	0.260000
+HWE	0	0.250000	23	0.330000	0.360000	0.390000
+HWE	0	0.350000	17	0.420000	0.430000	0.480000
+HWE	0	0.450000	6	0.410000	0.430000	0.490000
+HWE	0	0.550000	5	0.470000	0.480000	0.530000
+HWE	0	0.650000	5	0.390000	0.420000	0.500000
+HWE	0	0.750000	2	0.290000	0.290000	0.370000
+HWE	0	0.850000	5	0.280000	0.290000	0.310000
+HWE	0	0.950000	1	0.000000	0.000000	0.000000

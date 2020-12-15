@@ -1,0 +1,27 @@
+PLINK v1.90b5.4 64-bit (10 Apr 2018)
+Options in effect:
+  --bfile HGDP_tiwi117_andaman_merge
+  --out HGDP_Tiwi_Andaman
+  --pca
+
+Hostname: cl4n007
+Working directory: /lustre/scratch/NagarajLab_BG/HGDP_rosenberg
+Start time: Mon Jan 13 16:19:08 2020
+
+Random number seed: 1578896348
+386377 MB RAM detected; reserving 193188 MB for main workspace.
+2810 variants loaded from .bim file.
+1237 people (729 males, 378 females, 130 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to HGDP_Tiwi_Andaman.nosex .
+Using up to 71 threads (change this with --threads).
+Before main variant filters, 1237 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.966213.
+2810 variants and 1237 people pass filters and QC.
+Note: No phenotypes present.
+Excluding 289 variants on non-autosomes from relationship matrix calc.
+Relationship matrix calculation complete.
+--pca: Results saved to HGDP_Tiwi_Andaman.eigenval and
+HGDP_Tiwi_Andaman.eigenvec .
+
+End time: Mon Jan 13 16:19:09 2020

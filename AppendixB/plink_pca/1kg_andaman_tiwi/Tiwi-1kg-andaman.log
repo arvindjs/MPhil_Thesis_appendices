@@ -1,0 +1,26 @@
+PLINK v1.90b5.4 64-bit (10 Apr 2018)
+Options in effect:
+  --bfile tiwi_1kg_andaman
+  --out Tiwi-1kg-andaman
+  --pca
+
+Hostname: cl4n066
+Working directory: /lustre/scratch/NagarajLab_BG/indigen_proj/8_jointgenotypge/sentieon_combined_vcf/plink_files/tiwi_117/2npca
+Start time: Tue Jan 14 18:11:51 2020
+
+Random number seed: 1578989511
+386377 MB RAM detected; reserving 193188 MB for main workspace.
+2791453 variants loaded from .bim file.
+2631 people (1233 males, 1271 females, 127 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to Tiwi-1kg-andaman.nosex .
+Using up to 71 threads (change this with --threads).
+Before main variant filters, 2624 founders and 7 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.264294.
+2791453 variants and 2631 people pass filters and QC.
+Note: No phenotypes present.
+Relationship matrix calculation complete.
+--pca: Results saved to Tiwi-1kg-andaman.eigenval and Tiwi-1kg-andaman.eigenvec
+.
+
+End time: Tue Jan 14 18:19:16 2020
